@@ -493,7 +493,7 @@
       </div>
     </footer>
     <!-- Backdrop -->
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-btn" aria-label="Modal close button">
           <svg class="modal-btn-icon" width="8" height="8">
@@ -544,16 +544,15 @@
               </svg>
             </div>
           </div>
-          <div class="modal-form-field-wrapper">
-            <label class="modal-form-label" for="usr-comment">Comment</label>
-            <textarea
-              id="usr-comment"
-              name="usr-comment"
-              placeholder="Text input"
-              rows="5"
-            >
-            </textarea>
-          </div>
+          <label class="modal-form-label" for="user_comment">Comment</label>
+          <textarea
+            class="modal-form-textarea"
+            id="user_comment"
+            name="user_comment"
+            rows="5"
+            placeholder="Text input"
+          >
+          </textarea>
           <label>
             <input type="checkbox" name="accept" />I accept the terms and
             conditions of the Privacy Policy
