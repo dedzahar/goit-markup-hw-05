@@ -183,7 +183,8 @@ img {
   margin: 0 auto 48px;
 }
 
-.hero-button {
+.hero-button,
+.modal-submit-btn {
   background-color: #4d5ae5;
   color: #fff;
   font-weight: 500;
@@ -202,7 +203,9 @@ img {
 }
 
 .hero-button:hover,
-.hero-button:focus {
+.hero-button:focus,
+.modal-submit-btn:hover,
+.modal-submit-btn:focus {
   background-color: #404bbf;
 }
 
@@ -625,8 +628,17 @@ img {
   max-height: 120px;
 }
 
+.modal-form-checkbox {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  outline: none;
+  margin-right: 8px;
+}
+
 .modal-form-input:focus,
-.modal-form-textarea:focus {
+.modal-form-textarea:focus,
+.modal-form-checkbox:focus {
   border-color: #4d5ae5;
 }
 
@@ -641,4 +653,8 @@ img {
 
 .modal-form-input:focus + .modal-form-icon {
   fill: #4d5ae5;
+}
+
+.modal-submit-btn {
+  margin-top: 24px;
 }
