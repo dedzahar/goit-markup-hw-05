@@ -480,6 +480,7 @@
                 class="subscribe-form-input"
                 type="email"
                 placeholder="E-mail"
+                name="user_email"
               />
             </label>
             <button class="subscribe-form-btn" type="submit">
@@ -493,9 +494,9 @@
       </div>
     </footer>
     <!-- Backdrop -->
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
-        <button class="modal-btn" aria-label="Modal close button">
+        <button class="modal-btn" type="button" aria-label="Modal close button">
           <svg class="modal-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -503,15 +504,15 @@
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form" name="contacts">
           <div class="modal-form-field-wrapper">
-            <label class="modal-form-label" for="user_name">Name</label>
+            <label class="modal-form-label" for="user-name">Name</label>
             <div class="modal-form-field">
               <input
                 class="modal-form-input"
                 type="text"
-                id="user_name"
-                name="user_name"
+                id="user-name"
+                name="user-name"
               />
-              <svg class="modal-form-icon" width="18" height="18">
+              <svg class="modal-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
@@ -544,20 +545,35 @@
               </svg>
             </div>
           </div>
-          <label class="modal-form-label" for="user_comment">Comment</label>
-          <textarea
-            class="modal-form-textarea"
-            id="user_comment"
-            name="user_comment"
-            rows="5"
-            placeholder="Text input"
-          >
-          </textarea>
-          <label class="modal-form-label">
-            <input class="modal-form-checkbox" type="checkbox" name="accept" />I
-            accept the terms and conditions of the
-            <a href="#" class="privacy-form-link">Privacy Policy</a>
-          </label>
+          <div class="modal-textarea-wrapper">
+            <label class="modal-form-label" for="user-comment">Comment</label>
+            <textarea
+              class="modal-form-textarea"
+              id="user-comment"
+              name="user-comment"
+              rows="5"
+              placeholder="Text input"
+            >
+            </textarea>
+          </div>
+          <div class="modal-checkbox-wrapper">
+            <input
+              class="modal-real-checkbox visually-hidden"
+              type="checkbox"
+              id="user-privacy"
+              name="user-privacy"
+              value="true"
+            />
+            <label class="modal-form-label" for="user-privacy">
+              <span class="modal-form-checkbox">
+                <svg class="modal-form-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="#" class="privacy-form-link">Privacy Policy</a>
+            </label>
+          </div>
           <button class="modal-submit-btn" type="submit">Send</button>
         </form>
       </div>
