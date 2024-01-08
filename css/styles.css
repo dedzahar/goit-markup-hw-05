@@ -678,7 +678,6 @@ img {
 .modal-form-input:focus,
 .modal-form-textarea:focus {
   border-color: #4d5ae5;
-  border: none;
 }
 
 .modal-real-checkbox:checked + label > .modal-form-checkbox {
