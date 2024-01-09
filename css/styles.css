@@ -680,6 +680,10 @@ img {
   border-color: #4d5ae5;
 }
 
+.modal-real-checkbox:focus + label > .modal-form-checkbox {
+  border-color: #4d5ae5;
+}
+
 .modal-real-checkbox:checked + label > .modal-form-checkbox {
   background-color: #404bbf;
   border: none;
